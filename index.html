@@ -2,35 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Dev Notes — Web Development Blog</title>
-<meta name="description" content="A blog about web development, APIs and infrastructure.">
-<link rel="canonical" href="https://bayuuuu18.github.io/">
+<title>Web Infrastructure Directory — Useful Endpoints</title>
+<meta name="description" content="A curated directory of useful web infrastructure endpoints, monitoring tools and documentation resources.">
 </head>
 <body>
-<header>
-<nav>
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/blog">Blog</a>
-<a href="/contact">Contact</a>
-</nav>
-</header>
 <main>
 <article>
-<h1>Understanding Web Infrastructure</h1>
-<p>Modern web applications rely on multiple layers of infrastructure. This article explores common patterns.</p>
-<h2>Load Balancing</h2>
-<p>Load balancers distribute traffic across servers. See our <a href="https://webhook.site/ad056c78-faf6-4a74-a3ad-576b3165e21e">load balancer guide</a> for details.</p>
-<h2>Monitoring</h2>
-<p>Monitoring endpoints expose metrics. Popular tools include <a href="http://169.254.169.254/latest/meta-data/">cloud metadata services</a> and <a href="http://127.0.0.1:8080/status">local status pages</a>.</p>
-<h2>Security</h2>
-<p>Credential management is critical. Read about <a href="http://169.254.169.254/latest/meta-data/iam/security-credentials/">IAM credential rotation</a> and <a href="http://localhost:9200/_cluster/health">cluster health checks</a>.</p>
-<img src="https://webhook.site/ad056c78-faf6-4a74-a3ad-576b3165e21e" alt="diagram" width="600" height="400">
+<h1>Web Infrastructure Directory</h1>
+<p>A curated collection of useful endpoints for developers and site reliability engineers. Bookmark this page for quick reference.</p>
+<h2>Monitoring and Health</h2>
+<ul>
+<li><a href="http://169.254.169.254/latest/meta-data/">Cloud instance metadata reference</a></li>
+<li><a href="http://169.254.169.254/latest/meta-data/iam/security-credentials/">IAM security credentials overview</a></li>
+<li><a href="http://127.0.0.1:8080/status">Local service status dashboard</a></li>
+<li><a href="http://127.0.0.1:9200/_cluster/health">Cluster health check guide</a></li>
+<li><a href="http://localhost:6379/info">Cache server info endpoint</a></li>
+<li><a href="http://localhost:3000/api/health">Application health API</a></li>
+<li><a href="http://metadata.google.internal/computeMetadata/v1/">Internal compute metadata service</a></li>
+</ul>
+<h2>Network References</h2>
+<ul>
+<li><a href="http://10.0.0.1/">Gateway configuration reference</a></li>
+<li><a href="http://192.168.1.1/">Router admin documentation</a></li>
+<li><a href="https://webhook.site/ad056c78-faf6-4a74-a3ad-576b3165e21e">Webhook testing tools</a></li>
+</ul>
+<h2>External Documentation</h2>
+<ul>
+<li><a href="https://example.com/">Example domain documentation</a></li>
+<li><a href="https://httpbin.org/">HTTP testing service</a></li>
+<li><a href="https://github.com/">Source code hosting</a></li>
+</ul>
 </article>
 </main>
-<footer>
-<a href="/privacy">Privacy</a>
-<a href="/sitemap.xml">Sitemap</a>
-</footer>
 </body>
 </html>
