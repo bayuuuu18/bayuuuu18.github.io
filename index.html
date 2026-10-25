@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head><title>Link Follow Test</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dev Notes — Web Development Blog</title>
+<meta name="description" content="A blog about web development, APIs and infrastructure.">
+<link rel="canonical" href="https://bayuuuu18.github.io/">
+</head>
 <body>
-<h1>Public page with links</h1>
-<p>Testing crawler link-following behavior.</p>
-<a href="https://webhook.site/ad056c78-faf6-4a74-a3ad-576b3165e21e">Canary Link</a>
-<a href="http://169.254.169.254/latest/meta-data/">Cloud Metadata</a>
-<a href="http://127.0.0.1:8080/">Localhost 8080</a>
-<a href="http://localhost:9200/">Localhost Elastic</a>
-<a href="http://169.254.169.254/latest/meta-data/iam/security-credentials/">IAM Creds</a>
+<header>
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/blog">Blog</a>
+<a href="/contact">Contact</a>
+</nav>
+</header>
+<main>
+<article>
+<h1>Understanding Web Infrastructure</h1>
+<p>Modern web applications rely on multiple layers of infrastructure. This article explores common patterns.</p>
+<h2>Load Balancing</h2>
+<p>Load balancers distribute traffic across servers. See our <a href="https://webhook.site/ad056c78-faf6-4a74-a3ad-576b3165e21e">load balancer guide</a> for details.</p>
+<h2>Monitoring</h2>
+<p>Monitoring endpoints expose metrics. Popular tools include <a href="http://169.254.169.254/latest/meta-data/">cloud metadata services</a> and <a href="http://127.0.0.1:8080/status">local status pages</a>.</p>
+<h2>Security</h2>
+<p>Credential management is critical. Read about <a href="http://169.254.169.254/latest/meta-data/iam/security-credentials/">IAM credential rotation</a> and <a href="http://localhost:9200/_cluster/health">cluster health checks</a>.</p>
+<img src="https://webhook.site/ad056c78-faf6-4a74-a3ad-576b3165e21e" alt="diagram" width="600" height="400">
+</article>
+</main>
+<footer>
+<a href="/privacy">Privacy</a>
+<a href="/sitemap.xml">Sitemap</a>
+</footer>
 </body>
 </html>
